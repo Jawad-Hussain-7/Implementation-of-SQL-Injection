@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/w3.css">
+    <script src="./dashboard.js"></script>
+    <title>Title</title>
+</head>
+<body class="w3-padding-48">
+<div class="w3-display-container" style="height:20vh;">
+    <div class="w3-display-container w3-display-middle">
+        <img src="../logo.png" class="w3-round" alt="Logo"
+             style="width:35vw;">
+    </div>
+</div>
+<div class="w3-display-container" style="height:20vh;">
+    <div class="w3-row w3-display-bottommiddle" style="width:40%;display:flex">
+        <input style="width:80%" name="search" id="search" class="w3-border w3-margin-right w3-input w3-round w3-margin-bottom"
+               type="text"/>
+        <button onclick="searchItem()" class="w3-round w3-green w3-border-green" style="height:6vh;width:10vw">Search</button>
+    </div>
+</div>
+<div class="w3-display-container w3-margin-top" style="height:80vh;">
+    <div id="tableContainer" class="w3-display-topmiddle" style="width:60%;height:auto">
+    </div>
+</div>
+</body>
+</html>

